@@ -3,7 +3,10 @@ import Hooks.webHooks;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
+import static steps.authPageSteps.*;
 import static steps.mainPageSteps.*;
+import static steps.singleTaskPageSteps.*;
+import static steps.tasksPageSteps.*;
 
 import steps.mainPageSteps;
 
