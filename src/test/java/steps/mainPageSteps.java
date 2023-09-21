@@ -1,16 +1,14 @@
 package steps;
 
 import elements.mainPageElements;
-
-import javax.xml.xpath.XPath;
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.visible;
+import org.junit.jupiter.api.Assertions;
+import static elements.authPageElements.loginInput;
 
 public class mainPageSteps extends mainPageElements {
     public static void goToRequiredProject() {
         listOfCurrentProjects.click();
         requiredProject.click();
+        Assertions.assertTrue((!loginInput.exists()));
     }
 
 }

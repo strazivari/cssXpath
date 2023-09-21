@@ -1,7 +1,6 @@
 package elements;
 
 import com.codeborne.selenide.SelenideElement;
-
 import static com.codeborne.selenide.Selenide.$x;
 
 public class tasksPageElements {
@@ -14,7 +13,6 @@ public class tasksPageElements {
     public static SelenideElement searchFilterTest = $x("//span[@class='subnavigator-title']");
     public static SelenideElement searchSortTest = $x("//a[@class='order-options aui-button aui-style-default jira-aui-dropdown2-trigger']//span");
     public static SelenideElement taskStatusCheck = $x("//span[@id='status-val']");
-
     public static SelenideElement taskStatusCheck2 = $x("//li[@class='item item-right']//div[@class='wrap']//strong[@title='Решение']//following-sibling::span[contains(text(),' ')]");
     public static SelenideElement myOpenedTasks =$x ("//div[@id='subnav-opts']//div[@class='aui-dropdown2-section']//li//a[contains(text(),'Мои открытые задачи')]");
     public static SelenideElement filterActivation = $x ("//div[@class='order-by-fields']");
